@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{618D343E-C05F-48EA-9A7D-378BBF4A223E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>WindowsApplication1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cari.Designer.vb">
+      <DependentUpon>Cari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cetak.Designer.vb">
+      <DependentUpon>Cetak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cetak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokter.Designer.vb">
+      <DependentUpon>Dokter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dokter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasil.Designer.vb">
+      <DependentUpon>Hasil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hasil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hematologi.Designer.vb">
+      <DependentUpon>Hematologi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hematologi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imunoserologi.Designer.vb">
+      <DependentUpon>Imunoserologi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imunoserologi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informasi Pasien.Designer.vb">
+      <DependentUpon>Informasi Pasien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Informasi Pasien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KimiaKlinik.Designer.vb">
+      <DependentUpon>KimiaKlinik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KimiaKlinik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mikrobiologi.Designer.vb">
+      <DependentUpon>Mikrobiologi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mikrobiologi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Online.Designer.vb">
+      <DependentUpon>Online.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Online.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.vb">
+      <DependentUpon>Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QC.Designer.vb">
+      <DependentUpon>QC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TenagaLab.Designer.vb">
+      <DependentUpon>TenagaLab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TenagaLab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worklist.Designer.vb">
+      <DependentUpon>Worklist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Worklist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkStatus.Designer.vb">
+      <DependentUpon>WorkStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cari.resx">
+      <DependentUpon>Cari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cetak.resx">
+      <DependentUpon>Cetak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokter.resx">
+      <DependentUpon>Dokter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasil.resx">
+      <DependentUpon>Hasil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hematologi.resx">
+      <DependentUpon>Hematologi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imunoserologi.resx">
+      <DependentUpon>Imunoserologi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informasi Pasien.resx">
+      <DependentUpon>Informasi Pasien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KimiaKlinik.resx">
+      <DependentUpon>KimiaKlinik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mikrobiologi.resx">
+      <DependentUpon>Mikrobiologi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Online.resx">
+      <DependentUpon>Online.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QC.resx">
+      <DependentUpon>QC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TenagaLab.resx">
+      <DependentUpon>TenagaLab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Worklist.resx">
+      <DependentUpon>Worklist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkStatus.resx">
+      <DependentUpon>WorkStatus.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scientist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unauthorized-person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-wide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
